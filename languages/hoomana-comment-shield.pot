@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hoomana Comment Shield 0.1.0\\n"
+"MIME-Version: 1.0\\n"
+"Content-Type: text/plain; charset=UTF-8\\n"
+"Content-Transfer-Encoding: 8bit\\n"
+"X-Domain: hoomana-comment-shield\\n"
+
+msgid "Leave this field empty"
+msgstr ""
+
+msgid "Please reload the page and try again."
+msgstr ""
+
+msgid "Your comment could not be submitted."
+msgstr ""
+
+msgid "Comment blocked"
+msgstr ""
+
+msgid "Comment Shield"
+msgstr ""
+
+msgid "%s spam comment blocked"
+msgid_plural "%s spam comments blocked"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "No CAPTCHA, external service, or configuration required."
+msgstr ""
