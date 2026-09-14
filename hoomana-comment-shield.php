@@ -1,10 +1,9 @@
 <?php
-/*
 /**
- * Plugin Name:       Hoomana Comment Shield – Anti-Spam Without CAPTCHA
+ * Plugin Name:       Hoomana Comment Shield
  * Plugin URI:        https://github.com/r0z30ya/hoomana-comment-shield
  * Description:       Block automated comment spam quietly. No CAPTCHA, no configuration, no cookies, and no external service.
- * Version:           0.1.3
+ * Version:           0.1.4
  * Requires at least: 5.9
  * Requires PHP:      7.4
  * Author:            Hooman
@@ -12,14 +11,13 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       hoomana-comment-shield
  * Domain Path:       /languages
- */
  *
  * @package Hoomana_Comment_Shield
  */
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'HCS_VERSION', '0.1.3' );
+define( 'HCS_VERSION', '0.1.4' );
 define( 'HCS_FILE', __FILE__ );
 define( 'HCS_DIR', plugin_dir_path( __FILE__ ) );
 

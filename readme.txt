@@ -2,9 +2,9 @@
 Contributors: hoomanemon
 Tags: anti-spam, comment spam, honeypot, no captcha, lightweight
 Requires at least: 5.9
-Tested up to: 6.7
+Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.1.3
+Stable tag: 0.1.4
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,9 @@ It is intentionally a small first line of defense. Sites targeted by sophisticat
 Hoomana Comment Shield does not collect, transmit, or store personal data. It stores only a site-local count of blocked submissions.
 
 == Changelog ==
+
+= 0.1.4 =
+* Prepares the release for WordPress.org submission.
 
 = 0.1.3 =
 * Improves the public listing copy and updates the WordPress.org contributor username.
