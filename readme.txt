@@ -1,10 +1,10 @@
-=== Hoomana Comment Shield ===
+=== Hoomana Native Comment Guard ===
 Contributors: hoomanemon
 Tags: anti-spam, comment spam, honeypot, no captcha, lightweight
 Requires at least: 5.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.1.4
+Stable tag: 0.1.5
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Block automated comment spam quietly — no CAPTCHA, no configuration, and no fr
 
 == Description ==
 
-Most comment-spam tools add friction for real visitors: CAPTCHAs to solve, services that track them, or settings pages to configure. Hoomana Comment Shield takes a quieter approach for the native WordPress comment form.
+Most comment-spam tools add friction for real visitors: CAPTCHAs to solve, services that track them, or settings pages to configure. Hoomana Native Comment Guard takes a quieter approach for the native WordPress comment form.
 
 * Removes the website field to reduce link-spam incentives.
 * Adds a rotating, signed honeypot field that real visitors never see.
@@ -21,12 +21,12 @@ Most comment-spam tools add friction for real visitors: CAPTCHAs to solve, servi
 * Needs no account and no configuration.
 * Shows a small Dashboard count of detected spam attempts.
 
-Hoomana Comment Shield is a lightweight first line of defense, designed for native WordPress comment forms. Sites targeted by sophisticated or high-volume spam may still need moderation rules or a dedicated anti-spam service. REST and XML-RPC comment clients are intentionally left unchanged for compatibility. Developers can bypass validation for a custom integration with the `hcs_skip_comment_validation` filter.
+Hoomana Native Comment Guard is a lightweight first line of defense, designed for native WordPress comment forms. Sites targeted by sophisticated or high-volume spam may still need moderation rules or a dedicated anti-spam service. REST and XML-RPC comment clients are intentionally left unchanged for compatibility. Developers can bypass validation for a custom integration with the `hcncg_skip_comment_validation` filter.
 
 == Installation ==
 
-1. Upload the `hoomana-comment-shield` folder to `/wp-content/plugins/`, or install it through the WordPress Plugins screen.
-2. Activate **Hoomana Comment Shield**.
+1. Upload the `hoomana-native-comment-guard` folder to `/wp-content/plugins/`, or install it through the WordPress Plugins screen.
+2. Activate **Hoomana Native Comment Guard**.
 3. That is all. Protection starts on native comment forms immediately.
 
 == Frequently Asked Questions ==
@@ -41,7 +41,7 @@ No. It only checks new submissions through the native form.
 
 = Does it support custom comment forms? =
 
-Only forms that use the standard WordPress comment hooks are protected automatically. Custom integrations can add the same fields or use the `hcs_skip_comment_validation` filter.
+Only forms that use the standard WordPress comment hooks are protected automatically. Custom integrations can add the same fields or use the `hcncg_skip_comment_validation` filter.
 
 = Will it slow down my site? =
 
@@ -65,9 +65,14 @@ It is intentionally a small first line of defense. Sites targeted by sophisticat
 
 == Privacy ==
 
-Hoomana Comment Shield does not collect, transmit, or store personal data. It stores only a site-local count of blocked submissions.
+Hoomana Native Comment Guard does not collect, transmit, or store personal data. It stores only a site-local count of blocked submissions.
 
 == Changelog ==
+
+= 0.1.5 =
+* Renames the plugin to Hoomana Native Comment Guard.
+* Uses enqueued CSS for the honeypot field.
+* Removes bundled translation files for WordPress.org distribution.
 
 = 0.1.4 =
 * Prepares the release for WordPress.org submission.
@@ -77,10 +82,10 @@ Hoomana Comment Shield does not collect, transmit, or store personal data. It st
 
 = 0.1.2 =
 * Improves honeypot accessibility and avoids iterating over all submitted form fields.
-* Removes the optional l10n.php translation file; bundled Persian translation uses the standard .mo file.
+* Removes the optional legacy translation loader.
 
 = 0.1.1 =
-* Adds the bundled Persian translation files.
+* Improves internationalization support.
 
 = 0.1.0 =
 * First public beta.

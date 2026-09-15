@@ -2,13 +2,13 @@
 /**
  * Comment-form fields used to identify unsophisticated automated submissions.
  *
- * @package Hoomana_Comment_Shield
+ * @package Hoomana_Native_Comment_Guard
  */
 
 defined( 'ABSPATH' ) || exit;
 
-class HCS_Honeypot {
-	const FIELD_PREFIX = 'hcs_hp_';
+class HCNCG_Honeypot {
+	const FIELD_PREFIX = 'hcncg_hp_';
 
 	/** Registers fields for logged-out and logged-in commenters. */
 	public function __construct() {
@@ -36,16 +36,15 @@ class HCS_Honeypot {
 	public function render_fields() {
 		$field_name = self::get_field_name();
 		$timestamp  = time();
-		$signature  = wp_hash( 'hcs-comment|' . $field_name . '|' . $timestamp, 'auth' );
+		$signature  = wp_hash( 'hcncg-comment|' . $field_name . '|' . $timestamp, 'auth' );
 		?>
-		<p class="hcs-honeypot" aria-hidden="true">
-			<label for="<?php echo esc_attr( $field_name ); ?>"><?php esc_html_e( 'Leave this field empty', 'hoomana-comment-shield' ); ?></label>
+		<p class="hcncg-honeypot" aria-hidden="true">
+			<label for="<?php echo esc_attr( $field_name ); ?>"><?php esc_html_e( 'Leave this field empty', 'hoomana-native-comment-guard' ); ?></label>
 			<input type="text" id="<?php echo esc_attr( $field_name ); ?>" name="<?php echo esc_attr( $field_name ); ?>" value="" tabindex="-1" autocomplete="off" />
 		</p>
-		<input type="hidden" name="hcs_started" value="<?php echo esc_attr( (string) $timestamp ); ?>" />
-		<input type="hidden" name="hcs_honeypot_name" value="<?php echo esc_attr( $field_name ); ?>" />
-		<input type="hidden" name="hcs_signature" value="<?php echo esc_attr( $signature ); ?>" />
-		<style>.hcs-honeypot{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;overflow:hidden!important;opacity:0!important;pointer-events:none!important}</style>
+		<input type="hidden" name="hcncg_started" value="<?php echo esc_attr( (string) $timestamp ); ?>" />
+		<input type="hidden" name="hcncg_honeypot_name" value="<?php echo esc_attr( $field_name ); ?>" />
+		<input type="hidden" name="hcncg_signature" value="<?php echo esc_attr( $signature ); ?>" />
 		<?php
 	}
 }
