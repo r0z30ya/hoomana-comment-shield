@@ -4,7 +4,7 @@ Tags: anti-spam, comment spam, honeypot, no captcha, lightweight
 Requires at least: 5.9
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 0.1.5
+Stable tag: 0.1.6
 License: GPL-2.0-or-later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -68,6 +68,9 @@ It is intentionally a small first line of defense. Sites targeted by sophisticat
 Hoomana Native Comment Guard does not collect, transmit, or store personal data. It stores only a site-local count of blocked submissions.
 
 == Changelog ==
+
+= 0.1.6 =
+* Updates the public repository URL.
 
 = 0.1.5 =
 * Renames the plugin to Hoomana Native Comment Guard.

@@ -1,9 +1,9 @@
 <?php
 /**
  * Plugin Name:       Hoomana Native Comment Guard
- * Plugin URI:        https://github.com/r0z30ya/hoomana-comment-shield
+ * Plugin URI:        https://github.com/r0z30ya/hoomana-native-comment-guard
  * Description:       Block automated comment spam quietly. No CAPTCHA, no configuration, no cookies, and no external service.
- * Version:           0.1.5
+ * Version:           0.1.6
  * Requires at least: 5.9
  * Requires PHP:      7.4
  * Author:            Hooman
@@ -16,7 +16,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'HCNCG_VERSION', '0.1.5' );
+define( 'HCNCG_VERSION', '0.1.6' );
 define( 'HCNCG_FILE', __FILE__ );
 define( 'HCNCG_DIR', plugin_dir_path( __FILE__ ) );
 
